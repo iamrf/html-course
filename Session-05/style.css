@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'yekan';
+    src: url('./files/fonts/IRANYekanWebRegular.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'yekanbold';
+    src: url('./files/fonts/IRANYekanWebBold.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +17,7 @@ body{
     direction: rtl;
     float: right;
     height: 500vh;
+    font-family: 'yekan';
 }
 
 header{
@@ -99,30 +111,49 @@ header{
     margin-right: 120px;
 }
 
-.items-title{
-    font-size: 32px;
-    width: 100vw;
-    text-align: center;
+.items-container {
+    height: 250px;
+    margin: 150px 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.items-title {
+    font-size: 22px;
+}
+
+.items {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .item {
-    background-color: #fff;
+    border: 1px solid #ddd;
     width: 300px;
-    height: 150px;
-    border: 1px solid #000;
+    height: auto;
     border-radius: 10px;
-    position: relative;
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    padding: 10px 0;
 }
 
 .item > img {
-    position: absolute;
-    right: 0;
-    top: 0;
-
+    width: 100px;
 }
 
-.item > div {
-    position: absolute;
-    right: 120px; 
-    top: 15px;   
+.item-content > h6 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.item-content > p {
+    font-size: 12px;
+    color: #666;
 }
