@@ -1,0 +1,15 @@
+#username {
+    background-color: red;
+    color: #fff;
+    border: 0px;
+    outline: none;
+    border-radius: 15px;
+}
+
+#username:hover {
+    background-color: blue;
+}
+
+#email:focus{
+    background-color: yellow;
+}
