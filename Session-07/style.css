@@ -1,0 +1,13 @@
+.menu {
+    width: 100px;
+    height: 70px;
+    background-color: yellow;
+}
+
+.menu-body {
+    display: none;
+}
+
+.menu:hover ~ div{
+    display: block;
+}

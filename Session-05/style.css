@@ -1,13 +1,10 @@
 @font-face {
     font-family: 'yekan';
-    src: url('./files/fonts/IRANYekanWebRegular.ttf');
+    src: url('./files/fonts/IRANSansXV.woff');
     font-style: normal;
+    font-weight: 300;
 }
 
-@font-face {
-    font-family: 'yekanbold';
-    src: url('./files/fonts/IRANYekanWebBold.ttf');
-}
 
 * {
     margin: 0;
@@ -43,6 +40,10 @@ header{
     padding: 5px 15px;
     font-weight: bold;
     margin-top: 30px;
+}
+
+.header-link:hover{
+    background-color: red;
 }
 
 .header-image{
@@ -96,6 +97,10 @@ header{
     margin-left: 10px;
 }
 
+.signup:hover{
+    background-color: #666;
+}
+
 .signin {
     text-decoration: none;
     background-color: #18C784;
@@ -105,6 +110,11 @@ header{
     float: left;
     margin-left: 150px;
 }
+
+.signin:hover{
+    background-color: #ff678d;
+}
+
 
 .navbar-logo {
     width: 100px;
@@ -133,6 +143,13 @@ header{
     justify-content: space-around;
 }
 
+@media screen and (max-width:650px){
+    .items {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .item {
     border: 1px solid #ddd;
     width: 300px;
@@ -156,4 +173,10 @@ header{
 .item-content > p {
     font-size: 12px;
     color: #666;
+}
+
+@media screen and (orientation:portrait){
+    .header-link{
+        background-color: blue;
+    }
 }
