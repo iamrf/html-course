@@ -97,20 +97,69 @@ a {
     }
 }
 
-/* style baz shodane menu */
-.tran {
+
+
+.transform-rotate {
     background-color: red;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
     transition-property: all;
     transition-delay: 0s;
     transition-duration: 1.5s;
     transition-timing-function: linear;
     color: white;
-    font-size: 70px;
 }
 
-.tran:hover {
+.transform-rotate:hover {
+    transform: rotate(30deg)
+}
+
+.transform-translate {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 1.5s;
+    transition-timing-function: linear;
+    color: white;
+}
+
+.transform-translate:hover {
+    transform: translate(50px, 15px)
+}
+
+.transform-scale {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 1.5s;
+    transition-timing-function: linear;
+    color: white;
+}
+
+.transform-scale:hover {
+    transform: scale(2, 0.5)
+}
+
+.transform-skew {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 1.5s;
+    transition-timing-function: linear;
+    color: white;
+}
+
+.transform-skew:hover {
     transform: skew(-30deg, -15deg)
 }
 
@@ -119,19 +168,19 @@ a {
 }
 
 .matn::before{
-    content: 'aval';
+    content: 'ghabl';
 
 }
 
 .matn::after {
-    content: 'AVAL';
+    content: 'bad';
 }
 
 .matn:hover::after {
-    content: 'Z';
+    content: 'text after hover';
 }
 
-.container {
+.flexbox {
     display: flex;
     flex-direction: column;
 }
